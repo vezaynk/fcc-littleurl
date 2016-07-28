@@ -44,7 +44,7 @@ app.get('/new/*', function (req, res) {
   if (isValidUrl(url)){
     var short = shorten(url);
     var response = {
-      short: 'https://localhost:3643/' + short,
+      short: 'https://fathomless-mesa-75244.herokuapp.com/' + short,
       long:  url
     }
     res.send(JSON.stringify(response));
